@@ -23,14 +23,14 @@ const Modal = ({ isOpen, onClose, title, children, type,enableSigninButton }) =>
           Sign up
         </button> : <></> }
         { type === "signin" ? 
-        <button
-          onClick={() => {
-  window.open("/contribute-data", "_blank");
-}}
-          className= {enableSigninButton ? " cursor-pointer px-4 py-2  bg-blue-900 text-white border rounded" : " cursor-pointer px-4 py-2 bg-white-500 text-black border rounded "}
-        >
-          Sign in
-        </button> : <></>}
+      <a
+  href="/contribute-data"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="cursor-pointer px-4 py-2 bg-blue-900 text-white border rounded"
+>
+  Sign in
+</a> : <></>}
         <button
           onClick={onClose}
           className="cursor-pointer px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600"
