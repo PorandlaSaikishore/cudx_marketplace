@@ -24,7 +24,9 @@ const Modal = ({ isOpen, onClose, title, children, type,enableSigninButton }) =>
         </button> : <></> }
         { type === "signin" ? 
         <button
-          onClick={() => window.open(`${window.location.origin}/contribute-data`, "_blank")}
+          onClick={() => {
+  window.open("/contribute-data", "_blank");
+}}
           className= {enableSigninButton ? " cursor-pointer px-4 py-2  bg-blue-900 text-white border rounded" : " cursor-pointer px-4 py-2 bg-white-500 text-black border rounded "}
         >
           Sign in

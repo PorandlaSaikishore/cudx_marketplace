@@ -1,10 +1,11 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
+import provideImg from "../../assets/data_provider_img.jpg"
 
 function PopularData() {
     const dataProvider = [
         {
-            imageUrl: "https://img.freepik.com/free-photo/digital-data-stream_23-2151967415.jpg?semt=ais_hybrid&w=740&q=80",
+            imageUrl: provideImg,
             providerName: "Factori",
             rating: "4.9",
             buyerName: "Verified Buyer",
@@ -13,7 +14,7 @@ function PopularData() {
 
         },
          {
-            imageUrl: "https://img.freepik.com/free-photo/digital-data-stream_23-2151967415.jpg?semt=ais_hybrid&w=740&q=80",
+            imageUrl: provideImg,
             providerName: "Factori",
             rating: "4.9",
             buyerName: "Verified Buyer",
@@ -22,7 +23,7 @@ function PopularData() {
 
         },
          {
-            imageUrl: "https://img.freepik.com/free-photo/digital-data-stream_23-2151967415.jpg?semt=ais_hybrid&w=740&q=80",
+            imageUrl: provideImg,
             providerName: "Factori",
             rating: "4.9",
             buyerName: "Verified Buyer",
@@ -31,7 +32,7 @@ function PopularData() {
 
         },
          {
-            imageUrl: "https://img.freepik.com/free-photo/digital-data-stream_23-2151967415.jpg?semt=ais_hybrid&w=740&q=80",
+            imageUrl: provideImg,
             providerName: "Factori",
             rating: "4.9",
             buyerName: "Verified Buyer",
@@ -40,7 +41,7 @@ function PopularData() {
 
         },
          {
-            imageUrl: "https://img.freepik.com/free-photo/digital-data-stream_23-2151967415.jpg?semt=ais_hybrid&w=740&q=80",
+            imageUrl: provideImg,
             providerName: "Factori",
             rating: "4.9",
             buyerName: "Verified Buyer",
@@ -56,7 +57,7 @@ function PopularData() {
                 <div className="grid grid-cols-2 gap-7">
                     {dataProvider.map((provider,index) => (<div className="flex  rounded border-gray-400 border items-center p-6 gap-7">
 
-                        <div><img className="w-300 h-80" src={provider.imageUrl} alt="" /></div>
+                        <div className='w-[200%]'><img className=" h-80" src={provider.imageUrl} alt="" /></div>
                         {/* <div class="w-px h-32 bg-gray-400 ml-7"></div> */}
                         <div className="mx-auto">
                             <div className="text-2xl font-bold">{provider.providerName}</div>
